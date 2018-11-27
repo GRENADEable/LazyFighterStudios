@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: 4b5a4ca1a4dd849438e2ac4f8c9d6d46
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bed
+    100004: Chair
+    100006: Dining table
+    100008: Fridge
+    100010: Frying pan
+    100012: Lamp
+    100014: Side table
+    100016: Sofa
+    100018: Stove
+    100020: Vase
+    100022: Wall light
+    400000: //RootNode
+    400002: Bed
+    400004: Chair
+    400006: Dining table
+    400008: Fridge
+    400010: Frying pan
+    400012: Lamp
+    400014: Side table
+    400016: Sofa
+    400018: Stove
+    400020: Vase
+    400022: Wall light
+    2100000: Wood
+    2100002: Stainless steel
+    2100004: White
+    2100006: 'Material #51'
+    2100008: 'Material #52'
+    2100010: Leather
+    2100012: No Name
+    2100014: Black steel
+    2100016: Grey Fabric
+    2100018: White fabric
+    2100020: White steel
+    2100022: Grey steel
+    2100024: Brushed aluminum
+    2100026: Dark brushed aluminum
+    2300000: Bed
+    2300002: Chair
+    2300004: Dining table
+    2300006: Fridge
+    2300008: Frying pan
+    2300010: Lamp
+    2300012: Side table
+    2300014: Sofa
+    2300016: Stove
+    2300018: Vase
+    2300020: Wall light
+    3300000: Bed
+    3300002: Chair
+    3300004: Dining table
+    3300006: Fridge
+    3300008: Frying pan
+    3300010: Lamp
+    3300012: Side table
+    3300014: Sofa
+    3300016: Stove
+    3300018: Vase
+    3300020: Wall light
+    4300000: Chair
+    4300002: Wall light
+    4300004: Lamp
+    4300006: Dining table
+    4300008: Sofa
+    4300010: Vase
+    4300012: Frying pan
+    4300014: Bed
+    4300016: Side table
+    4300018: Stove
+    4300020: Fridge
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
