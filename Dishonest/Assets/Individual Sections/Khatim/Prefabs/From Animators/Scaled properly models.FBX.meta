@@ -1,32 +1,54 @@
 fileFormatVersion: 2
-guid: 4b5a4ca1a4dd849438e2ac4f8c9d6d46
+guid: 7b5c246ab132c334daf79fd980b4a907
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
+    100000: Alcohol bottle
     100002: Bed
-    100004: Chair
-    100006: Dining table
-    100008: Fridge
-    100010: Frying pan
-    100012: Lamp
-    100014: Side table
-    100016: Sofa
-    100018: Stove
-    100020: Vase
-    100022: Wall light
-    400000: //RootNode
+    100004: Bed room chair
+    100006: Beer glass
+    100008: Candle shandalier
+    100010: Chair
+    100012: Curtain
+    100014: Dining table
+    100016: Fridge
+    100018: Frying pan
+    100020: Lamp
+    100022: Left cupbord
+    100024: Plate
+    100026: Right cupbord
+    100028: //RootNode
+    100030: Side table
+    100032: Sink (Washroom)
+    100034: Sofa
+    100036: Stove
+    100038: Vase
+    100040: Wall light
+    100042: Wardrobe
+    100044: Window frame
+    400000: Alcohol bottle
     400002: Bed
-    400004: Chair
-    400006: Dining table
-    400008: Fridge
-    400010: Frying pan
-    400012: Lamp
-    400014: Side table
-    400016: Sofa
-    400018: Stove
-    400020: Vase
-    400022: Wall light
+    400004: Bed room chair
+    400006: Beer glass
+    400008: Candle shandalier
+    400010: Chair
+    400012: Curtain
+    400014: Dining table
+    400016: Fridge
+    400018: Frying pan
+    400020: Lamp
+    400022: Left cupbord
+    400024: Plate
+    400026: Right cupbord
+    400028: //RootNode
+    400030: Side table
+    400032: Sink (Washroom)
+    400034: Sofa
+    400036: Stove
+    400038: Vase
+    400040: Wall light
+    400042: Wardrobe
+    400044: Window frame
     2100000: Wood
     2100002: Stainless steel
     2100004: White
@@ -41,28 +63,50 @@ ModelImporter:
     2100022: Grey steel
     2100024: Brushed aluminum
     2100026: Dark brushed aluminum
-    2300000: Bed
-    2300002: Chair
-    2300004: Dining table
-    2300006: Fridge
-    2300008: Frying pan
-    2300010: Lamp
-    2300012: Side table
-    2300014: Sofa
-    2300016: Stove
-    2300018: Vase
-    2300020: Wall light
-    3300000: Bed
-    3300002: Chair
-    3300004: Dining table
-    3300006: Fridge
-    3300008: Frying pan
-    3300010: Lamp
-    3300012: Side table
-    3300014: Sofa
-    3300016: Stove
-    3300018: Vase
-    3300020: Wall light
+    2300000: Alcohol bottle
+    2300002: Bed
+    2300004: Bed room chair
+    2300006: Beer glass
+    2300008: Candle shandalier
+    2300010: Chair
+    2300012: Curtain
+    2300014: Dining table
+    2300016: Fridge
+    2300018: Frying pan
+    2300020: Lamp
+    2300022: Left cupbord
+    2300024: Plate
+    2300026: Right cupbord
+    2300028: Side table
+    2300030: Sink (Washroom)
+    2300032: Sofa
+    2300034: Stove
+    2300036: Vase
+    2300038: Wall light
+    2300040: Wardrobe
+    2300042: Window frame
+    3300000: Alcohol bottle
+    3300002: Bed
+    3300004: Bed room chair
+    3300006: Beer glass
+    3300008: Candle shandalier
+    3300010: Chair
+    3300012: Curtain
+    3300014: Dining table
+    3300016: Fridge
+    3300018: Frying pan
+    3300020: Lamp
+    3300022: Left cupbord
+    3300024: Plate
+    3300026: Right cupbord
+    3300028: Side table
+    3300030: Sink (Washroom)
+    3300032: Sofa
+    3300034: Stove
+    3300036: Vase
+    3300038: Wall light
+    3300040: Wardrobe
+    3300042: Window frame
     4300000: Chair
     4300002: Wall light
     4300004: Lamp
@@ -74,6 +118,17 @@ ModelImporter:
     4300016: Side table
     4300018: Stove
     4300020: Fridge
+    4300022: Bed room chair
+    4300024: Candle shandalier
+    4300026: Wardrobe
+    4300028: Window frame
+    4300030: Curtain
+    4300032: Sink (Washroom)
+    4300034: Right cupbord
+    4300036: Left cupbord
+    4300038: Plate
+    4300040: Beer glass
+    4300042: Alcohol bottle
   externalObjects: {}
   materials:
     importMaterials: 1
