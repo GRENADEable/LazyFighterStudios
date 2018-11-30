@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.W))
+        /*if (Input.GetKey(KeyCode.W))
         {
             playerRB.AddForce(transform.forward * speed);
         }
@@ -36,6 +36,6 @@ public class PlayerController : MonoBehaviour
         {
             playerRB.AddForce(transform.right * speed);
         }
-        //Implement get AXIS for the player movement.
+        //Implement get AXIS for the player movement.*/
     }
 }
