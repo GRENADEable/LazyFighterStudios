@@ -336,9 +336,6 @@ GameObject:
   - component: {fileID: 1134421951}
   - component: {fileID: 1134421950}
   - component: {fileID: 1134421949}
-  - component: {fileID: 1134421952}
-  - component: {fileID: 1134421954}
-  - component: {fileID: 1134421953}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -406,49 +403,6 @@ Transform:
   m_Father: {fileID: 1791355977}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 22.831001, y: 0, z: 0}
---- !u!114 &1134421952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1134421948}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fca2290cfd697a429d64dd508ea8c36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerLocation: {fileID: 1791355977}
-  distanceAway: 10
-  cameraReference: {fileID: 1134421951}
---- !u!114 &1134421953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1134421948}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ec4b361522388743b5e7a4b1621f102, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorSensitivity: 1
-  playerRB: {fileID: 1791355973}
-  cameraTransform: {fileID: 1134421951}
---- !u!114 &1134421954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1134421948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a046d2e5ad3c944ebae4f6c7cc1c86e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 0
-  cameraRotateSpeed: 1
-  playerReference: {fileID: 1791355972}
-  cameraReference: {fileID: 1134421951}
 --- !u!1 &1337785371
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +670,9 @@ GameObject:
   - component: {fileID: 1791355975}
   - component: {fileID: 1791355974}
   - component: {fileID: 1791355973}
+  - component: {fileID: 1791355980}
   - component: {fileID: 1791355978}
+  - component: {fileID: 1791355979}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -818,15 +774,47 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1791355972}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a046d2e5ad3c944ebae4f6c7cc1c86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
+  movementSpeed: 0.1
   cameraRotateSpeed: 5
   playerReference: {fileID: 1791355972}
   cameraReference: {fileID: 1134421951}
+  minAngleHorizontal: 1
+  minAngleVertical: 3
+  maxAngleHorizontal: 3
+  maxAngleVertical: 1
+--- !u!114 &1791355979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791355972}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fca2290cfd697a429d64dd508ea8c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLocation: {fileID: 1791355977}
+  distanceAway: 0
+  cameraReference: {fileID: 1134421951}
+--- !u!114 &1791355980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791355972}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec4b361522388743b5e7a4b1621f102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorSensitivity: 0
+  playerRB: {fileID: 1791355973}
+  cameraTransform: {fileID: 1134421951}
 --- !u!1 &2083107120
 GameObject:
   m_ObjectHideFlags: 0
