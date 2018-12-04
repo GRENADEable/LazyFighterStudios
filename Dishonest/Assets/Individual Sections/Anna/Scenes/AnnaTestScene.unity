@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 54ea1d33a7c0ade418ea054b384d0044,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -171,7 +172,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ffb338470399108449d23c3db231f8ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -461,7 +462,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ffb338470399108449d23c3db231f8ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -670,9 +671,7 @@ GameObject:
   - component: {fileID: 1791355975}
   - component: {fileID: 1791355974}
   - component: {fileID: 1791355973}
-  - component: {fileID: 1791355980}
   - component: {fileID: 1791355978}
-  - component: {fileID: 1791355979}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -723,7 +722,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e94926f367e23f542a5eaeeab820ed2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -781,40 +780,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 0.1
   cameraRotateSpeed: 5
+  horizontal: 0
+  vertical: 0
   playerReference: {fileID: 1791355972}
   cameraReference: {fileID: 1134421951}
-  minAngleHorizontal: 1
-  minAngleVertical: 3
-  maxAngleHorizontal: 3
-  maxAngleVertical: 1
---- !u!114 &1791355979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1791355972}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fca2290cfd697a429d64dd508ea8c36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerLocation: {fileID: 1791355977}
-  distanceAway: 0
-  cameraReference: {fileID: 1134421951}
---- !u!114 &1791355980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1791355972}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ec4b361522388743b5e7a4b1621f102, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorSensitivity: 0
-  playerRB: {fileID: 1791355973}
-  cameraTransform: {fileID: 1134421951}
+  minAngleHorizontal: -1
+  minAngleVertical: -0.5
+  maxAngleHorizontal: 1
+  maxAngleVertical: -0.5
 --- !u!1 &2083107120
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +848,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ffb338470399108449d23c3db231f8ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
