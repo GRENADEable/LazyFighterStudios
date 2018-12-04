@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Individual Sections/Khatim/Scenes/MainMenuScene.unity
+    guid: 2e402272ce507e843a033789fc10f546
+  - enabled: 1
+    path: Assets/Individual Sections/Khatim/Scenes/GameOverScene.unity
+    guid: 1904284b20cc9aa4fab666b70d4e8028
+  - enabled: 1
+    path: Assets/Individual Sections/Khatim/Scenes/DishonestGameScene.unity
+    guid: b85afb2a3e3726b44a10c8a6890bc4ea
   m_configObjects: {}

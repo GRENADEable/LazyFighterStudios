@@ -1329,7 +1329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f469174dc298d469aa1281ce0c416d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 5
   rotateSpeed: 3
 --- !u!143 &186880349
 CharacterController:
@@ -10196,7 +10196,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1692856368}
   m_LocalRotation: {x: -0.17338088, y: -0.02304651, z: 0.004058391, w: -0.9845768}
-  m_LocalPosition: {x: 0.07, y: 1.864, z: -7.42}
+  m_LocalPosition: {x: 0.059, y: 1.871, z: -7.652}
   m_LocalScale: {x: 2, y: 1.3097861, z: 2.1280432}
   m_Children: []
   m_Father: {fileID: 186880353}
