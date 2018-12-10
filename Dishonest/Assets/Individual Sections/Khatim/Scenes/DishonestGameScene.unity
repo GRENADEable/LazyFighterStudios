@@ -224,8 +224,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 15525666}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -62.16, y: -0.17, z: -19.31}
-  m_LocalScale: {x: 2, y: 9.51, z: 96.73355}
+  m_LocalPosition: {x: -62.095, y: -0.1735, z: -20.197}
+  m_LocalScale: {x: 1.87, y: 9.503344, z: 94.99052}
   m_Children: []
   m_Father: {fileID: 145505569}
   m_RootOrder: 2
@@ -347,6 +347,10 @@ Prefab:
       propertyPath: m_Name
       value: StoreRoomWallLight3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -456,6 +460,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.7786071
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: abace206864792741854bf5da78b15f2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abace206864792741854bf5da78b15f2, type: 3}
   m_IsPrefabAsset: 0
@@ -561,6 +569,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -730,6 +742,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -1056,6 +1072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   rotateSpeed: 3
+  col: {fileID: 0}
 --- !u!143 &186880349
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1206,6 +1223,10 @@ Prefab:
       propertyPath: m_Name
       value: DiningRoomWallLight3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -1272,6 +1293,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -1494,6 +1519,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -1573,6 +1602,10 @@ Prefab:
     - target: {fileID: 100000, guid: 8ff7625458262cb4eb3a0df4d33a42c5, type: 3}
       propertyPath: m_Name
       value: FryingPan2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8ff7625458262cb4eb3a0df4d33a42c5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff7625458262cb4eb3a0df4d33a42c5, type: 3}
@@ -1658,6 +1691,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -1724,6 +1761,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -1797,6 +1838,10 @@ Prefab:
       propertyPath: m_Name
       value: PhotoFrameDiningRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
   m_IsPrefabAsset: 0
@@ -1867,6 +1912,10 @@ Prefab:
     - target: {fileID: 400000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
@@ -2037,6 +2086,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -2192,6 +2245,10 @@ Prefab:
     - target: {fileID: 400000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.868336
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -2427,6 +2484,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: a5696d5e47617a44bacbdab40d4a32af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5696d5e47617a44bacbdab40d4a32af, type: 3}
   m_IsPrefabAsset: 0
@@ -2507,6 +2568,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2.5839067
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1d2fdf74b9fc79348a692cdbf3857b5c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d2fdf74b9fc79348a692cdbf3857b5c, type: 3}
   m_IsPrefabAsset: 0
@@ -2564,6 +2629,10 @@ Prefab:
     - target: {fileID: 400000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
@@ -2636,6 +2705,10 @@ Prefab:
     - target: {fileID: 400000, guid: 17789101e5fb9a44b98c7bd3498a94c1, type: 3}
       propertyPath: m_LocalScale.z
       value: 2.1135924
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 17789101e5fb9a44b98c7bd3498a94c1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17789101e5fb9a44b98c7bd3498a94c1, type: 3}
@@ -2727,6 +2800,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -2792,6 +2869,10 @@ Prefab:
     - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_Name
       value: StoreRoomWallLight5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -2877,6 +2958,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -2943,6 +3028,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -3014,6 +3103,10 @@ Prefab:
     - target: {fileID: 400000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
@@ -3124,6 +3217,10 @@ Prefab:
     - target: {fileID: 400000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.868336
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -3464,6 +3561,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -3548,6 +3649,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -3614,6 +3719,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -3694,6 +3803,10 @@ Prefab:
     - target: {fileID: 400000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
@@ -3813,8 +3926,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 630761880}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -38.549, y: -2.288, z: 73.894}
-  m_LocalScale: {x: 2, y: 9.5333805, z: 68.76318}
+  m_LocalPosition: {x: -38.601, y: -2.288, z: 73.894}
+  m_LocalScale: {x: 2, y: 9.5333805, z: 68.90071}
   m_Children: []
   m_Father: {fileID: 1302769135}
   m_RootOrder: 0
@@ -3952,6 +4065,10 @@ Prefab:
     - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_Name
       value: LivingRoomWallLight3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -4118,6 +4235,10 @@ Prefab:
       propertyPath: m_Name
       value: FryingPan
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8ff7625458262cb4eb3a0df4d33a42c5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff7625458262cb4eb3a0df4d33a42c5, type: 3}
   m_IsPrefabAsset: 0
@@ -4206,6 +4327,10 @@ Prefab:
     - target: {fileID: 100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
       propertyPath: m_Name
       value: PhotoFrameLivingRoom2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
@@ -4397,6 +4522,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: 3b0327cc3f0134c4ca6ed10cadffa382, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0327cc3f0134c4ca6ed10cadffa382, type: 3}
   m_IsPrefabAsset: 0
@@ -4477,6 +4606,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
   m_IsPrefabAsset: 0
@@ -4549,6 +4682,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: 678510f9888827745857ff24b261b224, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 678510f9888827745857ff24b261b224, type: 3}
   m_IsPrefabAsset: 0
@@ -4633,6 +4770,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -4700,6 +4841,10 @@ Prefab:
       propertyPath: m_Name
       value: WndowFrameGroundFloor2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8d3b2529bd2f9bc4e954d9a381c639ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d3b2529bd2f9bc4e954d9a381c639ff, type: 3}
   m_IsPrefabAsset: 0
@@ -4766,6 +4911,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -4855,6 +5004,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.3278396
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
   m_IsPrefabAsset: 0
@@ -4926,6 +5079,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: 3b0327cc3f0134c4ca6ed10cadffa382, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0327cc3f0134c4ca6ed10cadffa382, type: 3}
   m_IsPrefabAsset: 0
@@ -5013,6 +5170,10 @@ Prefab:
     - target: {fileID: 400000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.8683251
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -5120,6 +5281,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -5191,6 +5356,10 @@ Prefab:
       propertyPath: m_Name
       value: StoreRoomWallLight
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -5258,6 +5427,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -5324,6 +5497,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -5397,6 +5574,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -5463,6 +5644,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -5609,6 +5794,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -5675,6 +5864,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -5752,6 +5945,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: 3b0327cc3f0134c4ca6ed10cadffa382, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0327cc3f0134c4ca6ed10cadffa382, type: 3}
   m_IsPrefabAsset: 0
@@ -6053,6 +6250,10 @@ Prefab:
       propertyPath: m_Name
       value: FryingPan3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8ff7625458262cb4eb3a0df4d33a42c5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff7625458262cb4eb3a0df4d33a42c5, type: 3}
   m_IsPrefabAsset: 0
@@ -6150,6 +6351,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: 2ffce3d90f8d95643a64f4c56cbf5a7f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ffce3d90f8d95643a64f4c56cbf5a7f, type: 3}
   m_IsPrefabAsset: 0
@@ -6216,6 +6421,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -6305,6 +6514,10 @@ Prefab:
       propertyPath: m_Name
       value: KitchenWallLight5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -6371,6 +6584,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -6452,6 +6669,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: 2ffce3d90f8d95643a64f4c56cbf5a7f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ffce3d90f8d95643a64f4c56cbf5a7f, type: 3}
   m_IsPrefabAsset: 0
@@ -6557,6 +6778,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
   m_IsPrefabAsset: 0
@@ -6633,6 +6858,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.13113235
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 052e4c55307220a43ab297c1e7d1f44d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 052e4c55307220a43ab297c1e7d1f44d, type: 3}
   m_IsPrefabAsset: 0
@@ -6699,6 +6928,10 @@ Prefab:
     - target: {fileID: 100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
       propertyPath: m_Name
       value: PhotoFrameLivingRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
@@ -6958,6 +7191,10 @@ Prefab:
       propertyPath: m_Name
       value: DiningRoomWallLight2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -7025,6 +7262,10 @@ Prefab:
       propertyPath: m_Name
       value: WndowFrameGroundFloor
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8d3b2529bd2f9bc4e954d9a381c639ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d3b2529bd2f9bc4e954d9a381c639ff, type: 3}
   m_IsPrefabAsset: 0
@@ -7091,6 +7332,10 @@ Prefab:
       propertyPath: m_Name
       value: DiningRoomWallLight6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -7124,8 +7369,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1067759109}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -16.83, y: -0.185, z: -66.699}
-  m_LocalScale: {x: 2, y: 9.54, z: 88.659004}
+  m_LocalPosition: {x: -16.742, y: -0.185, z: -66.699}
+  m_LocalScale: {x: 2, y: 9.54, z: 88.83632}
   m_Children: []
   m_Father: {fileID: 145505569}
   m_RootOrder: 1
@@ -7286,7 +7531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1073560040
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7348,8 +7593,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1073560039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.685, y: 7.4305, z: -19.146}
-  m_LocalScale: {x: 91.014465, y: 0.3, z: 96.83234}
+  m_LocalPosition: {x: -17.524, y: 7.3851, z: -19.243}
+  m_LocalScale: {x: 91.014465, y: 0.3, z: 97.026}
   m_Children: []
   m_Father: {fileID: 1100760628}
   m_RootOrder: 6
@@ -7385,7 +7630,7 @@ GameObject:
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1100760628
 Transform:
   m_ObjectHideFlags: 0
@@ -7464,6 +7709,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -7556,6 +7805,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.3339895
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 287b11b33287ee54ab9e0e8e051b2b51, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 287b11b33287ee54ab9e0e8e051b2b51, type: 3}
   m_IsPrefabAsset: 0
@@ -7636,6 +7889,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
   m_IsPrefabAsset: 0
@@ -7702,6 +7959,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -7851,6 +8112,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
   m_IsPrefabAsset: 0
@@ -7921,6 +8186,10 @@ Prefab:
     - target: {fileID: 400000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
@@ -8005,6 +8274,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -8176,6 +8449,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: c4dfb9b86678a344e98ae04cc82547df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4dfb9b86678a344e98ae04cc82547df, type: 3}
   m_IsPrefabAsset: 0
@@ -8242,6 +8519,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -8314,6 +8595,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.8683251
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -8385,6 +8670,10 @@ Prefab:
       propertyPath: m_Name
       value: LivingRoomWallLight2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -8452,6 +8741,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -8477,7 +8770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &1191740684
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8725,6 +9018,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -8894,6 +9191,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -8927,8 +9228,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1231359296}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -18.746, y: -0.074, z: 28.27}
-  m_LocalScale: {x: 2, y: 9.380658, z: 88.89242}
+  m_LocalPosition: {x: -18.733, y: -0.096, z: 28.27}
+  m_LocalScale: {x: 2, y: 9.333755, z: 88.81107}
   m_Children: []
   m_Father: {fileID: 145505569}
   m_RootOrder: 0
@@ -9049,6 +9350,10 @@ Prefab:
     - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_Name
       value: LivingRoomWallLight6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -9218,6 +9523,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -9588,6 +9897,10 @@ Prefab:
       propertyPath: m_Name
       value: DiningRoomWallLight5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -9689,6 +10002,10 @@ Prefab:
     - target: {fileID: 400000, guid: 48fd4f1acaa13a8429868d60274310b5, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.7542948
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 48fd4f1acaa13a8429868d60274310b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48fd4f1acaa13a8429868d60274310b5, type: 3}
@@ -9948,6 +10265,10 @@ Prefab:
       propertyPath: m_Name
       value: BathroomWallLight (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -10018,6 +10339,10 @@ Prefab:
     - target: {fileID: 400000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
@@ -10106,6 +10431,10 @@ Prefab:
     - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_Name
       value: KitchenWallLight3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -10210,6 +10539,10 @@ Prefab:
     - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_Name
       value: DiningRoomWallLight4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -10380,6 +10713,10 @@ Prefab:
       propertyPath: m_Name
       value: TV (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d3fe99e402628b43bd71e5f1b24bf9d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d3fe99e402628b43bd71e5f1b24bf9d, type: 3}
   m_IsPrefabAsset: 0
@@ -10464,6 +10801,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -10530,6 +10871,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -10602,6 +10947,10 @@ Prefab:
       propertyPath: m_Name
       value: KitchenWallLight6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -10673,6 +11022,10 @@ Prefab:
     - target: {fileID: 100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
       propertyPath: m_Name
       value: PhotoFrameDiningRoom2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6eb55f8effec1c40a9946e1b00c9409, type: 3}
@@ -10869,6 +11222,10 @@ Prefab:
       propertyPath: m_Name
       value: DiningRoomWallLight
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -10927,6 +11284,10 @@ Prefab:
     - target: {fileID: 400000, guid: a5d1c5e9f666c784886649e5a90c7137, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.014004
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a5d1c5e9f666c784886649e5a90c7137, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d1c5e9f666c784886649e5a90c7137, type: 3}
@@ -11011,6 +11372,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -11168,6 +11533,10 @@ Prefab:
       propertyPath: m_Name
       value: BathroomWallLight2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -11244,6 +11613,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: 3b0327cc3f0134c4ca6ed10cadffa382, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0327cc3f0134c4ca6ed10cadffa382, type: 3}
   m_IsPrefabAsset: 0
@@ -11400,6 +11773,10 @@ Prefab:
       propertyPath: m_Name
       value: StoreRoomWallLight6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -11488,6 +11865,10 @@ Prefab:
       propertyPath: m_Name
       value: StoreRoomWallLight4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -11546,6 +11927,10 @@ Prefab:
     - target: {fileID: 400000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c362940d9fb4ef44aa2d6a9c16f593ea, type: 3}
@@ -11682,6 +12067,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -11769,6 +12158,10 @@ Prefab:
     - target: {fileID: 400000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
@@ -11893,6 +12286,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: de16497efd3cecc4e8e45065904a472b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de16497efd3cecc4e8e45065904a472b, type: 3}
   m_IsPrefabAsset: 0
@@ -12112,6 +12509,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
   m_IsPrefabAsset: 0
@@ -12177,6 +12578,10 @@ Prefab:
     - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_Name
       value: KitchenWallLight2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -12331,6 +12736,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: 066993fffe6971b42b02e14db065cb94, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 066993fffe6971b42b02e14db065cb94, type: 3}
   m_IsPrefabAsset: 0
@@ -12487,6 +12896,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -12592,6 +13005,10 @@ Prefab:
     - target: {fileID: 400000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
@@ -12774,6 +13191,10 @@ Prefab:
       propertyPath: m_Name
       value: DiningTable
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e0c70c0fd05beff49a5cc1275988d2b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c70c0fd05beff49a5cc1275988d2b5, type: 3}
   m_IsPrefabAsset: 0
@@ -12920,6 +13341,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -13112,6 +13537,10 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 100000, guid: a5696d5e47617a44bacbdab40d4a32af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5696d5e47617a44bacbdab40d4a32af, type: 3}
   m_IsPrefabAsset: 0
@@ -13282,6 +13711,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.23287418
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3c86370b0e765b94684bcf83588f0785, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c86370b0e765b94684bcf83588f0785, type: 3}
   m_IsPrefabAsset: 0
@@ -13374,6 +13807,10 @@ Prefab:
     - target: {fileID: 400000, guid: 0b8f2dd27ad76684881ded4bd23a4a02, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.99461883
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0b8f2dd27ad76684881ded4bd23a4a02, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b8f2dd27ad76684881ded4bd23a4a02, type: 3}
@@ -13527,6 +13964,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -13593,6 +14034,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -13687,6 +14132,10 @@ Prefab:
       propertyPath: m_Name
       value: LivingRoomWallLight5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -13753,6 +14202,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -13854,6 +14307,10 @@ Prefab:
       propertyPath: m_Name
       value: BathroomWallLight2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -13887,8 +14344,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1919378328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.7, y: 2.755, z: -18.69}
-  m_LocalScale: {x: 2, y: 9.218994, z: 96.010994}
+  m_LocalPosition: {x: 26.7, y: 2.561, z: -18.69}
+  m_LocalScale: {x: 2, y: 9.606193, z: 96.010994}
   m_Children: []
   m_Father: {fileID: 1100760628}
   m_RootOrder: 4
@@ -14117,6 +14574,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fccf9449cede048ad3fb937d9750a6, type: 3}
   m_IsPrefabAsset: 0
@@ -14308,6 +14769,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -14379,6 +14844,10 @@ Prefab:
       propertyPath: m_Name
       value: StoreRoomWallLight2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
   m_IsPrefabAsset: 0
@@ -14445,6 +14914,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -14526,6 +14999,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.8555002
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d3fe99e402628b43bd71e5f1b24bf9d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d3fe99e402628b43bd71e5f1b24bf9d, type: 3}
   m_IsPrefabAsset: 0
@@ -14587,6 +15064,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -14654,6 +15135,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -14739,6 +15224,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -14805,6 +15294,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
@@ -14905,6 +15398,10 @@ Prefab:
     - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
       propertyPath: m_Name
       value: BathroomWallLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de4c8e10d505b24fa447b16f61547a2, type: 3}
@@ -15175,6 +15672,10 @@ Prefab:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
   m_IsPrefabAsset: 0
@@ -15260,6 +15761,10 @@ Prefab:
       propertyPath: m_Name
       value: Vase2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 052e4c55307220a43ab297c1e7d1f44d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 052e4c55307220a43ab297c1e7d1f44d, type: 3}
   m_IsPrefabAsset: 0
@@ -15321,6 +15826,10 @@ Prefab:
     - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa01a9d1266360342b01c3332a572923, type: 3}
