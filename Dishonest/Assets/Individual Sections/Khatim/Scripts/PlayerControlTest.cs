@@ -17,10 +17,20 @@ public class PlayerControlTest : MonoBehaviour
 
     void Update()
     {
-        if (col != null && Input.GetKeyDown(KeyCode.E))
+        if (col != null && Input.GetKeyDown(KeyCode.E) && col.gameObject.tag == "Pickup")
         {
             col.gameObject.SetActive(false);
             col = null;
+        }
+
+        if (col != null && Input.GetKeyDown(KeyCode.E) && col.gameObject.tag == "Interact")
+        {
+            this.transform.position = new Vector3(1.0f, 6.0f);
+        }
+
+        if (col != null && Input.GetKeyDown(KeyCode.E) && col.gameObject.tag == "Interact2")
+        {
+            this.transform.position = new Vector3(1.0f, 2.6f);
         }
     }
     void FixedUpdate()
@@ -47,12 +57,32 @@ public class PlayerControlTest : MonoBehaviour
         {
             col = other;
         }
+
+        if (other.tag == "Interact")
+        {
+            col = other;
+        }
+
+        if (other.tag == "Interact2")
+        {
+            col = other;
+        }
     }
 
     //If player leaves a collider, remove the reference
     void OnTriggerExit(Collider other)
     {
         if (other.tag == "Pickup")
+        {
+            col = null;
+        }
+
+        if (other.tag == "Interact")
+        {
+            col = null;
+        }
+
+        if (other.tag == "Interact2")
         {
             col = null;
         }
