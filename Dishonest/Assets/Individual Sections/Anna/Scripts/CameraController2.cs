@@ -13,11 +13,11 @@ public class CameraController2 : MonoBehaviour
     public float minVerticalClamp;
     public float maxVerticalClamp;
     private float vertical;
-    private Vector3 offset;
+    //private Vector3 offset;
 
     void Start()
     {
-        offset = playerReference.transform.position - transform.position;  //Sets distance between the player and camera
+        //offset = playerReference.transform.position - transform.position;  //Sets distance between the player and camera
     }
 
     void FixedUpdate()

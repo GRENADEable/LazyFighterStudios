@@ -52,14 +52,18 @@ public class PlayerController : MonoBehaviour
         moveDirection = transform.TransformDirection(moveDirection);
         // moveDirection = moveDirection * speed;
 
-        moveDirection.y = moveDirection.y - gravity;
         // controller.Move(moveDirection);
 
         if (Input.GetKey(KeyCode.LeftShift))
+        {
             moveDirection = moveDirection * runningSpeed;
+        }
         else
+        {
             moveDirection = moveDirection * speed;
-
+        }
+        
+        moveDirection.y = moveDirection.y - gravity;
         controller.Move(moveDirection);
     }
 
