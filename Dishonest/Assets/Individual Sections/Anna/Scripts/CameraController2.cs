@@ -4,50 +4,44 @@ using UnityEngine;
 
 public class CameraController2 : MonoBehaviour
 {
-    private Vector3 offset;
     public float movementSpeed;
-    public float cameraRotateSpeed = 5;
-    public float horizontal;
-    public float vertical;
-
-    private Vector2 mouseLook;
+    public float cameraRotateSpeed;
 
     public GameObject playerReference;
     public Transform cameraReference;
 
-    public float minAngleHorizontal;
-    public float minAngleVertical;
-
-    public float maxAngleHorizontal;
-    public float maxAngleVertical;
-
+    public float minVerticalClamp;
+    public float maxVerticalClamp;
+    private float vertical;
+    //private Vector3 offset;
 
     void Start()
     {
-        offset = playerReference.transform.position - transform.position;  //Sets distance between the player and camera
+        //offset = playerReference.transform.position - transform.position;  //Sets distance between the player and camera
     }
 
     void FixedUpdate()
     {
         float keyboardVertical = Input.GetAxis("Vertical") * movementSpeed;
+        float keyboardHorizontal = Input.GetAxis("Horizontal") * movementSpeed; //Forgot to add left and right movement :P
         transform.position += transform.forward * keyboardVertical;
+        transform.position += transform.right * keyboardHorizontal; //Forgot to add left and right movement :P
     }
-
     void LateUpdate()
     {
-        horizontal = Input.GetAxis("Mouse X") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
-        vertical = Input.GetAxis("Mouse Y") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
-
-        float clampHorizontal = Mathf.Clamp(horizontal, minAngleHorizontal, maxAngleHorizontal);
-        float clampVertical = Mathf.Clamp(vertical, minAngleVertical, maxAngleVertical);
+        float horizontal = Input.GetAxis("Mouse X") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
+        vertical += Input.GetAxis("Mouse Y") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
 
         //-----------------------------------------------  Setting rotation and movement --------------------------------------
-        playerReference.transform.Rotate(0, -clampHorizontal, 0); //Rotates basedon the horizontal value assigned.
-        cameraReference.Rotate(vertical, 0, 0, Space.Self); //makes the camera rotate up and down
+        playerReference.transform.Rotate(0, horizontal, 0); //Rotates based on the horizontal value assigned.
+        vertical = Mathf.Clamp(vertical, minVerticalClamp, maxVerticalClamp);
 
-        float playerAngle = playerReference.transform.eulerAngles.y; //Accessing the players angle on the y axis
+        //cameraReference.Rotate(-vertical, 0, 0, Space.Self); //makes the camera rotate up and down
+        //float playerAngle = cameraReference.transform.eulerAngles.x; //Accessing the players angle on the y axis
 
-        Quaternion rotationX = Quaternion.Euler(0, playerAngle, 0); //Creating a new rotation based on player's angle
-        transform.position = playerReference.transform.position - (rotationX * offset);
+        cameraReference.transform.eulerAngles = new Vector3(-vertical, cameraReference.transform.eulerAngles.y, cameraReference.transform.eulerAngles.z);
+
+        //Quaternion rotationX = Quaternion.Euler(0, playerAngle, 0); //Creating a new rotation based on player's angle
+        //transform.position = playerReference.transform.position - (rotationX * offset);
     }
 }
