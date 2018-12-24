@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [Header("Player Movement")]
     public float speed;
     public float runningSpeed;
+    public float pushPower;
     public float gravity;
     [Header("Camera Clamp")]
     public float minVerticalClamp;
@@ -62,7 +63,7 @@ public class PlayerController : MonoBehaviour
         {
             moveDirection = moveDirection * speed;
         }
-        
+
         moveDirection.y = moveDirection.y - gravity;
         controller.Move(moveDirection);
     }
@@ -115,5 +116,24 @@ public class PlayerController : MonoBehaviour
         {
             col = null;
         }
+    }
+
+    //If player detects colliders with rigidbody in it. The player will push the object.
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody rgbody = hit.collider.attachedRigidbody;
+
+        if (rgbody == null || rgbody.isKinematic)
+        {
+            return;
+        }
+
+        if (hit.moveDirection.y < -0.3f)
+        {
+            return;
+        }
+
+        Vector3 push = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+        rgbody.velocity = push * pushPower;
     }
 }

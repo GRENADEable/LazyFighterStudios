@@ -283,7 +283,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100004, guid: dfc48cb77429ad14896dd09e6f5a24ec, type: 3}
+  - {fileID: 2100000, guid: eeca08a2938690949a4825fbe1a9f220, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -353,7 +353,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100006, guid: dfc48cb77429ad14896dd09e6f5a24ec, type: 3}
+  - {fileID: 2100000, guid: 219c6a390eee04845bf008f365b3d060, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -498,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.05
   runningSpeed: 0.5
+  pushPower: 1.5
   gravity: 0.1
   minVerticalClamp: -30
   maxVerticalClamp: 10
@@ -514,7 +515,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.4
+  m_Radius: 0.25
   m_Height: 1.61
   m_Direction: 1
   m_Center: {x: 0, y: 0.89, z: 0}
@@ -529,7 +530,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.61
-  m_Radius: 0.4
+  m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
