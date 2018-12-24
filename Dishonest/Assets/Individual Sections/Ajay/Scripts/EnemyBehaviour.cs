@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 public class EnemyBehaviour : MonoBehaviour {
 
-	//public Transform player;
+	private NavMeshAgent AI;
+	public Transform player;
 	public bool _patrolWaiting;
 	public float _totalWaitTime;
-
+	public float moveSpeed;
+	public float maxDis;
+	public float minDis;
+	enum AIState {Chase, Patrol}
+	AIState myAIState;
 	[SerializeField]
 	List<Waypoints> _patrolPoints;
-	NavMeshAgent AI;
 	int _currentPatrolIndex;
 	bool _travelling;
 	bool _waiting;
@@ -19,7 +24,9 @@ public class EnemyBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		AI = this.GetComponent<NavMeshAgent>();
+		myAIState = AIState.Patrol;
+
+		AI = GetComponent<NavMeshAgent>();
 
 		if(AI == null)
 		{
@@ -58,34 +65,47 @@ public class EnemyBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	public void Update () 
 	{
-		//Checking to see if close to destination
-		if(_travelling && AI.remainingDistance <= 1.0f)
-		{
-			_travelling = false;
 		
-		//If going to wait, then wait
-			if(_patrolWaiting)
-			{
-				_waiting = true;
-				_waitingTimer = 0f;
-			}
-			else
-			{
-				ChangePatrolPoint();
-				SetDestination();
-			}
+		if (Vector3.Distance(transform.position, player.position) <= minDis)
+        {
+         	transform.LookAt(player);
+		 	transform.position += transform.forward * moveSpeed * Time.deltaTime;
+ 
+            if (Vector3.Distance(transform.position, player.position) <= maxDis)
+            {
+                
+            }
 		}
-
-	if(_waiting)
-	{
-		_waitingTimer += Time.deltaTime;
-		if (_waitingTimer >= _totalWaitTime)
+		else
 		{
-			_waiting = false;
-			ChangePatrolPoint();
-			SetDestination();
-		}
-	}
+			//Checking to see if close to destination
+			if(_travelling && AI.remainingDistance <= 1.0f)
+			{
+				_travelling = false;
+			
+			//If going to wait, then wait
+				if(_patrolWaiting)
+				{
+					_waiting = true;
+					_waitingTimer = 0f;
+				}
+				else
+				{
+					ChangePatrolPoint();
+					SetDestination();
+				}
+			}
 
+			if(_waiting)
+			{
+				_waitingTimer += Time.deltaTime;
+				if (_waitingTimer >= _totalWaitTime)
+				{
+					_waiting = false;
+					ChangePatrolPoint();
+					SetDestination();
+				}
+			}
+		}
 	}
 }
