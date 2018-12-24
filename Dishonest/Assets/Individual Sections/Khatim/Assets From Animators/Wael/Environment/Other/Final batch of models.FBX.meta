@@ -1,0 +1,255 @@
+fileFormatVersion: 2
+guid: 02e5761b863d46f4fb0fa80f7b7f17eb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Alcohol bottle
+    100002: Bathtub
+    100004: Bed
+    100006: Bed room chair
+    100008: Beer glass
+    100010: Box001
+    100012: Box002
+    100014: Candle shandalier
+    100016: Chair
+    100018: Curtain
+    100020: Dining table
+    100022: Dining table001
+    100024: //RootNode
+    100026: Fridge
+    100028: Frying pan
+    100030: Kitchen knife
+    100032: Lamp
+    100034: Left cupbord
+    100036: Plate
+    100038: Right cupbord
+    100040: Side table
+    100042: Sink (Washroom)
+    100044: Sofa
+    100046: Stove
+    100048: Toilet
+    100050: Towel
+    100052: TV
+    100054: Vase
+    100056: Wall light
+    100058: Wardrobe
+    100060: Window frame
+    400000: Alcohol bottle
+    400002: Bathtub
+    400004: Bed
+    400006: Bed room chair
+    400008: Beer glass
+    400010: Box001
+    400012: Box002
+    400014: Candle shandalier
+    400016: Chair
+    400018: Curtain
+    400020: Dining table
+    400022: Dining table001
+    400024: //RootNode
+    400026: Fridge
+    400028: Frying pan
+    400030: Kitchen knife
+    400032: Lamp
+    400034: Left cupbord
+    400036: Plate
+    400038: Right cupbord
+    400040: Side table
+    400042: Sink (Washroom)
+    400044: Sofa
+    400046: Stove
+    400048: Toilet
+    400050: Towel
+    400052: TV
+    400054: Vase
+    400056: Wall light
+    400058: Wardrobe
+    400060: Window frame
+    2100000: Wood
+    2100002: Stainless steel
+    2100004: White
+    2100006: 'Material #51'
+    2100008: 'Material #52'
+    2100010: Leather
+    2100012: No Name
+    2100014: Black steel
+    2100016: Grey Fabric
+    2100018: White fabric
+    2100020: White steel
+    2100022: Grey steel
+    2100024: Brushed aluminum
+    2100026: Dark brushed aluminum
+    2100028: 'Material #15'
+    2100030: Empty
+    2300000: Alcohol bottle
+    2300002: Bathtub
+    2300004: Bed
+    2300006: Bed room chair
+    2300008: Beer glass
+    2300010: Box001
+    2300012: Box002
+    2300014: Candle shandalier
+    2300016: Chair
+    2300018: Curtain
+    2300020: Dining table
+    2300022: Dining table001
+    2300024: Fridge
+    2300026: Frying pan
+    2300028: Kitchen knife
+    2300030: Lamp
+    2300032: Left cupbord
+    2300034: Plate
+    2300036: Right cupbord
+    2300038: Side table
+    2300040: Sink (Washroom)
+    2300042: Sofa
+    2300044: Stove
+    2300046: Toilet
+    2300048: Towel
+    2300050: TV
+    2300052: Vase
+    2300054: Wall light
+    2300056: Wardrobe
+    2300058: Window frame
+    3300000: Alcohol bottle
+    3300002: Bathtub
+    3300004: Bed
+    3300006: Bed room chair
+    3300008: Beer glass
+    3300010: Box001
+    3300012: Box002
+    3300014: Candle shandalier
+    3300016: Chair
+    3300018: Curtain
+    3300020: Dining table
+    3300022: Dining table001
+    3300024: Fridge
+    3300026: Frying pan
+    3300028: Kitchen knife
+    3300030: Lamp
+    3300032: Left cupbord
+    3300034: Plate
+    3300036: Right cupbord
+    3300038: Side table
+    3300040: Sink (Washroom)
+    3300042: Sofa
+    3300044: Stove
+    3300046: Toilet
+    3300048: Towel
+    3300050: TV
+    3300052: Vase
+    3300054: Wall light
+    3300056: Wardrobe
+    3300058: Window frame
+    4300000: Chair
+    4300002: Wall light
+    4300004: Lamp
+    4300006: Dining table
+    4300008: Sofa
+    4300010: Vase
+    4300012: Frying pan
+    4300014: Bed
+    4300016: Side table
+    4300018: Stove
+    4300020: Fridge
+    4300022: Bed room chair
+    4300024: Candle shandalier
+    4300026: Wardrobe
+    4300028: Window frame
+    4300030: Curtain
+    4300032: Sink (Washroom)
+    4300034: Right cupbord
+    4300036: Left cupbord
+    4300038: Plate
+    4300040: Beer glass
+    4300042: Alcohol bottle
+    4300044: Kitchen knife
+    4300046: Toilet
+    4300048: Bathtub
+    4300050: Box001
+    4300052: Towel
+    4300054: TV
+    4300056: Box002
+    4300058: Dining table001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

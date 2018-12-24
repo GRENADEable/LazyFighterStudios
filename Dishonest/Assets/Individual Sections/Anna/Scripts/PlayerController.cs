@@ -22,10 +22,12 @@ public class PlayerController : MonoBehaviour
     private float vertical;
     [SerializeField]
     private Collider col;
+    private Animator anim;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -49,7 +51,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+        // moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+        moveDirection = new Vector3(0, 0.0f, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
         // moveDirection = moveDirection * speed;
 
@@ -63,6 +66,16 @@ public class PlayerController : MonoBehaviour
         {
             moveDirection = moveDirection * speed;
         }
+
+        // if ((Input.GetAxis("Vertical") > 0 || (Input.GetAxis("Vertical") < 0) || ((Input.GetAxis("Horizontal") > 0) || (Input.GetAxis("Horizontal") < 0))))
+        //     anim.SetBool("isWalking", true);
+        // else if (Input.GetAxis("Vertical") < 1 || Input.GetAxis("Horizontal") < 1)
+        //     anim.SetBool("isWalking", false);
+
+        if ((Input.GetAxis("Vertical") > 0 || (Input.GetAxis("Vertical") < 0)))
+            anim.SetBool("isWalking", true);
+        else if (Input.GetAxis("Vertical") < 1)
+            anim.SetBool("isWalking", false);
 
         moveDirection.y = moveDirection.y - gravity;
         controller.Move(moveDirection);
