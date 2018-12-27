@@ -47,35 +47,45 @@ public class PlayerController : MonoBehaviour
         {
             this.transform.position = new Vector3(1.0f, 2.6f);
         }
+
+        if (Input.GetKey(KeyCode.W))
+            anim.SetFloat("WalkandRun", 0.1f);
+        else
+            anim.SetFloat("WalkandRun", 0f);
+
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
+            anim.SetFloat("WalkandRun", 1f);
+
+        if (Input.GetKey(KeyCode.S))
+            anim.SetFloat("WalkandRunReversed", 0.1f);
+        else
+            anim.SetFloat("WalkandRunReversed", 0f);
+
+        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift))
+            anim.SetFloat("WalkandRunReversed", 1f);
+
+        if (Input.GetKey(KeyCode.A))
+            anim.SetFloat("SneakLeftandRight", 0.1f);
+        else
+            anim.SetFloat("SneakLeftandRight", 0f);
+
+        if (Input.GetKey(KeyCode.D))
+            anim.SetFloat("SneakLeftandRight", 1f);
     }
 
     void FixedUpdate()
     {
-        // moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-        moveDirection = new Vector3(0, 0.0f, Input.GetAxis("Vertical"));
+        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+        // moveDirection = new Vector3(0, 0.0f, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
         // moveDirection = moveDirection * speed;
 
         // controller.Move(moveDirection);
 
         if (Input.GetKey(KeyCode.LeftShift))
-        {
             moveDirection = moveDirection * runningSpeed;
-        }
         else
-        {
             moveDirection = moveDirection * speed;
-        }
-
-        // if ((Input.GetAxis("Vertical") > 0 || (Input.GetAxis("Vertical") < 0) || ((Input.GetAxis("Horizontal") > 0) || (Input.GetAxis("Horizontal") < 0))))
-        //     anim.SetBool("isWalking", true);
-        // else if (Input.GetAxis("Vertical") < 1 || Input.GetAxis("Horizontal") < 1)
-        //     anim.SetBool("isWalking", false);
-
-        if ((Input.GetAxis("Vertical") > 0 || (Input.GetAxis("Vertical") < 0)))
-            anim.SetBool("isWalking", true);
-        else if (Input.GetAxis("Vertical") < 1)
-            anim.SetBool("isWalking", false);
 
         moveDirection.y = moveDirection.y - gravity;
         controller.Move(moveDirection);
