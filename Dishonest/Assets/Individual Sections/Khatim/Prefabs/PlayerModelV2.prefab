@@ -582,7 +582,7 @@ GameObject:
   m_Layer: 0
   m_Name: PlayerModelV2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1778,8 +1778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ed9596d69cf3e4493235009d2b0b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.06
-  runningSpeed: 0.15
+  speed: 0.05
+  runningSpeed: 0.12
   pushPower: 1.5
   gravity: 0.1
   minVerticalClamp: -30
@@ -1816,9 +1816,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 296866c8c74c1ea4ab9c351f80118561, type: 3}
-  - {fileID: 2100004, guid: 296866c8c74c1ea4ab9c351f80118561, type: 3}
-  - {fileID: 2100006, guid: 296866c8c74c1ea4ab9c351f80118561, type: 3}
+  - {fileID: 2100000, guid: 219c6a390eee04845bf008f365b3d060, type: 2}
+  - {fileID: 2100000, guid: 5fcd8590b65c92647a81beb4343c6c11, type: 2}
+  - {fileID: 2100000, guid: eeca08a2938690949a4825fbe1a9f220, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1915,7 +1915,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 296866c8c74c1ea4ab9c351f80118561, type: 3}
+  - {fileID: 2100000, guid: 210782b7fd62f9c498effcf8dd9fe84c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

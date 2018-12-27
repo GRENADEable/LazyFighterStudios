@@ -8,6 +8,7 @@ TagManager:
   - Interact
   - Interact2
   - AI
+  - Light
   layers:
   - Default
   - TransparentFX

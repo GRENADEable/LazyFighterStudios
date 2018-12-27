@@ -49,41 +49,54 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.W))
-            anim.SetFloat("WalkandRun", 0.1f);
+            anim.SetBool("isWalking", true);
         else
-            anim.SetFloat("WalkandRun", 0f);
+            anim.SetBool("isWalking", false);
 
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
-            anim.SetFloat("WalkandRun", 1f);
+        {
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isRunning", true);
+        }
+        else
+            anim.SetBool("isRunning", false);
 
         if (Input.GetKey(KeyCode.S))
-            anim.SetFloat("WalkandRunReversed", 0.1f);
+            anim.SetBool("isWalkingBack", true);
         else
-            anim.SetFloat("WalkandRunReversed", 0f);
-
-        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift))
-            anim.SetFloat("WalkandRunReversed", 1f);
+            anim.SetBool("isWalkingBack", false);
 
         if (Input.GetKey(KeyCode.A))
-            anim.SetFloat("SneakLeftandRight", 0.1f);
+        {
+            anim.SetBool("isSneakingLeft", true);
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isWalkingBack", false);
+            anim.SetBool("isRunning", false);
+        }
         else
-            anim.SetFloat("SneakLeftandRight", 0f);
+            anim.SetBool("isSneakingLeft", false);
 
         if (Input.GetKey(KeyCode.D))
-            anim.SetFloat("SneakLeftandRight", 1f);
+        {
+            anim.SetBool("isSneakingRight", true);
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isWalkingBack", false);
+            anim.SetBool("isRunning", false);
+        }
+        else
+            anim.SetBool("isSneakingRight", false);
     }
 
     void FixedUpdate()
     {
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-        // moveDirection = new Vector3(0, 0.0f, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
-        // moveDirection = moveDirection * speed;
 
-        // controller.Move(moveDirection);
-
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        {
+            Debug.LogWarning("Running");
             moveDirection = moveDirection * runningSpeed;
+        }
         else
             moveDirection = moveDirection * speed;
 
@@ -120,6 +133,11 @@ public class PlayerController : MonoBehaviour
         {
             col = other;
         }
+
+        // if (other.tag == "Light")
+        // {
+        //     this.gameObject.SetActive(false);
+        // }
     }
 
     //If player leaves a collider, remove the reference
