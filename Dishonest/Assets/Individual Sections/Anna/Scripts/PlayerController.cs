@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
-            Debug.LogWarning("Running");
+            // Debug.LogWarning("Running");
             moveDirection = moveDirection * runningSpeed;
         }
         else
@@ -134,10 +134,11 @@ public class PlayerController : MonoBehaviour
             col = other;
         }
 
-        // if (other.tag == "Light")
-        // {
-        //     this.gameObject.SetActive(false);
-        // }
+        if (other.tag == "Light")
+        {
+            this.gameObject.SetActive(false);
+            SceneManage.instance.GameOver();
+        }
     }
 
     //If player leaves a collider, remove the reference

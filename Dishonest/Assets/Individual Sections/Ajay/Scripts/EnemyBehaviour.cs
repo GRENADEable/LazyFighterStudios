@@ -13,7 +13,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	public float maxDis;
 	public float minDis;
 	enum AIState {Chase, Patrol}
-	AIState myAIState;
+	// AIState myAIState;
 	[SerializeField]
 	List<Waypoints> _patrolPoints;
 	int _currentPatrolIndex;
@@ -24,7 +24,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		myAIState = AIState.Patrol;
+		// myAIState = AIState.Patrol;
 
 		AI = GetComponent<NavMeshAgent>();
 

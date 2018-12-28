@@ -309,9 +309,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4209356895848600}
   - component: {fileID: 108654587781754536}
-  - component: {fileID: 135146715572277314}
+  - component: {fileID: 136286220500518732}
   m_Layer: 0
-  m_Name: FlashLight
+  m_Name: FlashLightRays
   m_TagString: Light
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -403,9 +403,10 @@ GameObject:
   - component: {fileID: 95452902966190388}
   - component: {fileID: 195998765101411058}
   - component: {fileID: 114419132617076792}
+  - component: {fileID: 136409478020331880}
   m_Layer: 0
   m_Name: GuardV4
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -860,7 +861,7 @@ GameObject:
   - component: {fileID: 33197201344729162}
   - component: {fileID: 23914514963319800}
   m_Layer: 0
-  m_Name: FlashlightRays
+  m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1447,7 +1448,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509701272247432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.599, y: 1.6583359, z: -5.667}
+  m_LocalPosition: {x: -9.916, y: 1.6583359, z: 3.541}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4687607568451600}
@@ -2047,20 +2048,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200d76ba6bf1210499d70ed61c21a50b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDistance: 1
-  chaseDistance: 5
+  attackDistance: 3
+  chaseDistance: 6
   distanceToPlayer: 0
   foV: 60
-  veticalFov: 90
-  guardWalking: 2
-  guardRunning: 3
+  verticalFov: 90
+  guardWalking: 1.5
+  guardRunning: 3.5
   wanderRadius: 20
-  maxWanderTimer: 2
+  maxWanderTimer: 3
   player: {fileID: 0}
+  flashlight: {fileID: 108654587781754536}
   angle: 0
   verticalAngle: 0
---- !u!135 &135146715572277314
-SphereCollider:
+--- !u!136 &136286220500518732
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -2068,9 +2070,23 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.23
+  m_Height: 0.7
+  m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &136409478020331880
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509701272247432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 1.75
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.85, z: 0}
 --- !u!137 &137345760900329342
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2426,5 +2442,5 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 1.75
   m_BaseOffset: 0
-  m_WalkableMask: 3
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4

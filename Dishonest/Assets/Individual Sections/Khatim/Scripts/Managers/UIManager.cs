@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+
 public class UIManager : MonoBehaviour
 {
     public GameObject mainMenuPanel;
@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("DishonestGameScene");
+        SceneManage.instance.NewGame();
     }
 
     public void AboutToMainMenu()
@@ -35,8 +35,7 @@ public class UIManager : MonoBehaviour
 
     public void Quit()
     {
-        Debug.LogWarning("Quit");
-        Application.Quit();
+        SceneManage.instance.Exit();
     }
 
     public void SettingsPanel()

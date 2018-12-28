@@ -10,10 +10,9 @@ public class GuardFSM : MonoBehaviour
     //public float closeDistance;
     public float chaseDistance;
     public float distanceToPlayer;
-    //public float attackDelay;
     [Header("Enemy FoV")]
     public float foV;
-    public float veticalFov;
+    public float verticalFov;
     [Header("Guard Speed")]
     public float guardWalking;
     public float guardRunning;
@@ -21,8 +20,9 @@ public class GuardFSM : MonoBehaviour
     [Header("Wander Variables")]
     public float wanderRadius;
     public float maxWanderTimer;
+    [Header("Other")]
     public GameObject player;
-    //private bool isAttacking;
+    public Light flashlight;
     private int currCondition;
     private int wanderCondition = 1;
     private int chaseCondition = 2;
@@ -30,7 +30,6 @@ public class GuardFSM : MonoBehaviour
     private NavMeshAgent guardAgent;
     private Transform target;
     private float wanderTimer;
-    //private float attackTime;
     private Vector3 tarDir;
     private Animator anim;
     [SerializeField]
@@ -39,10 +38,8 @@ public class GuardFSM : MonoBehaviour
     private float verticalAngle;
     void Start()
     {
-        //isAttacking = false;
         guardAgent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        //attackTime = attackDelay;
         wanderTimer = maxWanderTimer;
     }
 
@@ -57,7 +54,7 @@ public class GuardFSM : MonoBehaviour
         angle = Vector3.Angle(this.tarDir, this.transform.forward);
         verticalAngle = Vector3.Angle(this.tarDir, -this.transform.up);
 
-        if (distanceToPlayer > chaseDistance && currCondition != wanderCondition)
+        if ((distanceToPlayer > chaseDistance || angle > foV) && currCondition != wanderCondition)
         {
             //Wander
             currCondition = 1;
@@ -65,20 +62,19 @@ public class GuardFSM : MonoBehaviour
             anim.SetBool("isAttacking", false);
         }
 
-        if (((angle < foV && distanceToPlayer < chaseDistance && verticalAngle < veticalFov) /*|| distanceToPlayer < closeDistance*/) && currCondition != chaseCondition)
-        // if (angle < foV && distanceToPlayer < chaseDistance)
+        if (angle < foV && distanceToPlayer < attackDistance && verticalAngle < verticalFov && currCondition != attackCondition)
+        {
+            //Attack Player
+            currCondition = 3;
+            anim.SetBool("isAttacking", true);
+        }
+        else if (angle < foV && distanceToPlayer < chaseDistance && verticalAngle < verticalFov && currCondition != chaseCondition)
         {
             //Chase Player
             currCondition = 2;
             anim.SetBool("isRunning", true);
             anim.SetBool("isAttacking", false);
-        }
 
-        if (distanceToPlayer < attackDistance && currCondition != attackCondition)
-        {
-            //Attack Player
-            currCondition = 3;
-            anim.SetBool("isAttacking", true);
         }
 
         if (!player.activeInHierarchy)
@@ -87,24 +83,6 @@ public class GuardFSM : MonoBehaviour
             anim.SetBool("isRunning", false);
             anim.SetBool("isAttacking", false);
         }
-
-        if (guardAgent.acceleration <= 0)
-            currCondition = 4;
-        // else
-        //     anim.SetBool("isAttacking", false);
-
-        // if (isAttacking)
-        // {
-        //     attackTime += Time.deltaTime;
-
-        //     if (attackTime >= attackDelay)
-        //     {
-        //         //Attack
-        //         attackTime = 0;
-        //         Debug.LogWarning("Attacking Player");
-        //     }
-
-        // }
     }
 
     void FixedUpdate()
@@ -128,12 +106,11 @@ public class GuardFSM : MonoBehaviour
             case 2: //Chase Condition
                 guardAgent.SetDestination(player.transform.position);
                 guardAgent.speed = guardRunning;
-                Debug.LogWarning("Chasing Player");
-                // isAttacking = false;
+                // Debug.LogWarning("Chasing Player");
                 break;
 
             case 3: //Attack Condition
-                // isAttacking = true;
+                // Debug.LogWarning("Attacking Player");
                 break;
 
             case 4: //Idle Condition
