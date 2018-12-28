@@ -16,18 +16,23 @@ public class PlayerController : MonoBehaviour
     public GameObject playerReference;
     public Transform cameraReference;
     public float cameraRotateSpeed;
+    public GameObject pauseScreen;
 
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private float vertical;
-    [SerializeField]
     private Collider col;
     private Animator anim;
+    [SerializeField]
+    private bool mouseEnabled;
 
     void Start()
     {
+        pauseScreen.SetActive(false);
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
+        mouseEnabled = true;
+        Time.timeScale = 1;
     }
 
     void Update()
@@ -85,6 +90,10 @@ public class PlayerController : MonoBehaviour
         }
         else
             anim.SetBool("isSneakingRight", false);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            PauseorUnpause();
+
     }
 
     void FixedUpdate()
@@ -94,7 +103,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
-            // Debug.LogWarning("Running");
+            Debug.LogWarning("Running");
             moveDirection = moveDirection * runningSpeed;
         }
         else
@@ -109,11 +118,14 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxis("Mouse X") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
         vertical += Input.GetAxis("Mouse Y") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
 
-        //-----------------------------------------------  Setting rotation and movement --------------------------------------
-        playerReference.transform.Rotate(0, horizontal, 0); //Rotates based on the horizontal value assigned.
-        vertical = Mathf.Clamp(vertical, minVerticalClamp, maxVerticalClamp);
+        if (mouseEnabled)
+        {
+            //-----------------------------------------------  Setting rotation and movement --------------------------------------
+            playerReference.transform.Rotate(0, horizontal, 0); //Rotates based on the horizontal value assigned.
+            vertical = Mathf.Clamp(vertical, minVerticalClamp, maxVerticalClamp);
 
-        cameraReference.transform.eulerAngles = new Vector3(-vertical, cameraReference.transform.eulerAngles.y, cameraReference.transform.eulerAngles.z);
+            cameraReference.transform.eulerAngles = new Vector3(-vertical, cameraReference.transform.eulerAngles.y, cameraReference.transform.eulerAngles.z);
+        }
     }
 
     //If player enters a collider, reference the other collider
@@ -177,5 +189,21 @@ public class PlayerController : MonoBehaviour
 
         Vector3 push = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
         rgbody.velocity = push * pushPower;
+    }
+
+    public void PauseorUnpause()
+    {
+        pauseScreen.SetActive(!pauseScreen.activeSelf);
+
+        if (pauseScreen.activeSelf)
+        {
+            Time.timeScale = 0;
+            mouseEnabled = false;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            mouseEnabled = true;
+        }
     }
 }

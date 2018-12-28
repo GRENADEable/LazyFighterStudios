@@ -2048,8 +2048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200d76ba6bf1210499d70ed61c21a50b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDistance: 3
-  chaseDistance: 6
+  attackDistance: 2.5
+  chaseDistance: 7
   distanceToPlayer: 0
   foV: 60
   verticalFov: 90

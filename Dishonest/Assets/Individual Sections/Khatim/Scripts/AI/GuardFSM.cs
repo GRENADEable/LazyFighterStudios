@@ -41,6 +41,7 @@ public class GuardFSM : MonoBehaviour
         guardAgent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         wanderTimer = maxWanderTimer;
+        flashlight.GetComponent<Light>();
     }
 
     void Update()
@@ -58,6 +59,7 @@ public class GuardFSM : MonoBehaviour
         {
             //Wander
             currCondition = 1;
+            flashlight.color = Color.white;
             anim.SetBool("isRunning", false);
             anim.SetBool("isAttacking", false);
         }
@@ -72,6 +74,7 @@ public class GuardFSM : MonoBehaviour
         {
             //Chase Player
             currCondition = 2;
+            flashlight.color = Color.red;
             anim.SetBool("isRunning", true);
             anim.SetBool("isAttacking", false);
 
