@@ -7,13 +7,13 @@ public class GuardFSM : MonoBehaviour
 {
     [Header("Guard Ditance Check")]
     public float attackDistance;
-    public float closeDistance;
+    //public float closeDistance;
     public float chaseDistance;
     public float distanceToPlayer;
     //public float attackDelay;
     [Header("Enemy FoV")]
-    public float angle;
     public float foV;
+    public float veticalFov;
     [Header("Guard Speed")]
     public float guardWalking;
     public float guardRunning;
@@ -33,6 +33,10 @@ public class GuardFSM : MonoBehaviour
     //private float attackTime;
     private Vector3 tarDir;
     private Animator anim;
+    [SerializeField]
+    private float angle;
+    [SerializeField]
+    private float verticalAngle;
     void Start()
     {
         //isAttacking = false;
@@ -45,12 +49,13 @@ public class GuardFSM : MonoBehaviour
     void Update()
     {
         //Distance check to Player
-        Vector3 chase = this.transform.TransformDirection(Vector3.forward) * chaseDistance;
-        Debug.DrawRay(this.transform.position, chase, Color.green);
+        Vector3 chaseLength = this.transform.TransformDirection(Vector3.forward) * chaseDistance;
+        Debug.DrawRay(this.transform.position, chaseLength, Color.green);
 
         distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
         tarDir = player.transform.position - this.transform.position;
         angle = Vector3.Angle(this.tarDir, this.transform.forward);
+        verticalAngle = Vector3.Angle(this.tarDir, -this.transform.up);
 
         if (distanceToPlayer > chaseDistance && currCondition != wanderCondition)
         {
@@ -60,7 +65,7 @@ public class GuardFSM : MonoBehaviour
             anim.SetBool("isAttacking", false);
         }
 
-        if (((angle < foV && distanceToPlayer < chaseDistance) || distanceToPlayer < closeDistance) && currCondition != chaseCondition)
+        if (((angle < foV && distanceToPlayer < chaseDistance && verticalAngle < veticalFov) /*|| distanceToPlayer < closeDistance*/) && currCondition != chaseCondition)
         // if (angle < foV && distanceToPlayer < chaseDistance)
         {
             //Chase Player
@@ -82,6 +87,9 @@ public class GuardFSM : MonoBehaviour
             anim.SetBool("isRunning", false);
             anim.SetBool("isAttacking", false);
         }
+
+        if (guardAgent.acceleration <= 0)
+            currCondition = 4;
         // else
         //     anim.SetBool("isAttacking", false);
 
@@ -120,7 +128,7 @@ public class GuardFSM : MonoBehaviour
             case 2: //Chase Condition
                 guardAgent.SetDestination(player.transform.position);
                 guardAgent.speed = guardRunning;
-                // Debug.LogWarning("Chasing Player");
+                Debug.LogWarning("Chasing Player");
                 // isAttacking = false;
                 break;
 
@@ -128,7 +136,8 @@ public class GuardFSM : MonoBehaviour
                 // isAttacking = true;
                 break;
 
-            case 4: //Null Condition
+            case 4: //Idle Condition
+                Debug.LogWarning("Idle");
                 break;
         }
     }
