@@ -28,7 +28,9 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        pauseScreen.SetActive(false);
+        if (pauseScreen != null)
+            pauseScreen.SetActive(false);
+
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         mouseEnabled = true;

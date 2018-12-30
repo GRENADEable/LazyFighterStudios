@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Individual Sections/Khatim/Scenes/SplashScreen.unity
+    guid: bb44bcd71e21f2d4aa34b89612028b36
+  - enabled: 1
     path: Assets/Individual Sections/Khatim/Scenes/MainMenuScene.unity
     guid: 2e402272ce507e843a033789fc10f546
   - enabled: 1
