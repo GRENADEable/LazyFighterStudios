@@ -8,9 +8,13 @@ public class UIManager : MonoBehaviour
     public GameObject mainMenuPanel;
     public GameObject settingsPanel;
     public GameObject aboutPanel;
+    public GameObject bgPanel;
+    public GameObject aboutBgPanel;
 
     void Awake()
     {
+        bgPanel.SetActive(true);
+        aboutBgPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
         settingsPanel.SetActive(false);
         aboutPanel.SetActive(false);
@@ -24,6 +28,8 @@ public class UIManager : MonoBehaviour
     public void AboutToMainMenu()
     {
         aboutPanel.SetActive(false);
+        aboutBgPanel.SetActive(false);
+        bgPanel.SetActive(true);
         mainMenuPanel.SetActive(true);
     }
 
@@ -47,6 +53,8 @@ public class UIManager : MonoBehaviour
     public void AboutPanel()
     {
         mainMenuPanel.SetActive(false);
+        bgPanel.SetActive(false);
+        aboutBgPanel.SetActive(true);
         aboutPanel.SetActive(true);
     }
 }
