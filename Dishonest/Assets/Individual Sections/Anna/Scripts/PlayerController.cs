@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public Transform cameraReference;
     public float cameraRotateSpeed;
     public GameObject pauseScreen;
-
+    public GameObject videoScreen;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private float vertical;
@@ -28,8 +28,11 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        if (pauseScreen != null)
+        if (pauseScreen != null && videoScreen != null)
+        {
             pauseScreen.SetActive(false);
+            videoScreen.SetActive(false);
+        }
 
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
@@ -39,10 +42,19 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (col != null && Input.GetKeyDown(KeyCode.E) && col.gameObject.tag == "Pickup")
+        if (col != null && Input.GetKeyDown(KeyCode.E) && col.gameObject.tag == "VideoTapeCassette")
         {
-            col.gameObject.SetActive(false);
-            col = null;
+            videoScreen.SetActive(!videoScreen.activeSelf);
+            if (videoScreen.activeSelf)
+            {
+                mouseEnabled = false;
+                Time.timeScale = 0;
+            }
+            else if (!videoScreen.activeSelf)
+            {
+                mouseEnabled = true;
+                Time.timeScale = 1;
+            }
         }
 
         if (col != null && Input.GetKeyDown(KeyCode.E) && col.gameObject.tag == "Interact")
@@ -117,11 +129,11 @@ public class PlayerController : MonoBehaviour
 
     void LateUpdate()
     {
-        float horizontal = Input.GetAxis("Mouse X") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
-        vertical += Input.GetAxis("Mouse Y") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
-
         if (mouseEnabled)
         {
+            float horizontal = Input.GetAxis("Mouse X") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
+            vertical += Input.GetAxis("Mouse Y") * cameraRotateSpeed; //Sets the horizonal vaule as the mouse horizontal movement and * by the speed of rotation
+
             //-----------------------------------------------  Setting rotation and movement --------------------------------------
             playerReference.transform.Rotate(0, horizontal, 0); //Rotates based on the horizontal value assigned.
             vertical = Mathf.Clamp(vertical, minVerticalClamp, maxVerticalClamp);
@@ -133,7 +145,7 @@ public class PlayerController : MonoBehaviour
     //If player enters a collider, reference the other collider
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Pickup")
+        if (other.tag == "VideoTapeCassette")
         {
             col = other;
         }
@@ -158,7 +170,7 @@ public class PlayerController : MonoBehaviour
     //If player leaves a collider, remove the reference
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Pickup")
+        if (other.tag == "VideoTapeCassette")
         {
             col = null;
         }
