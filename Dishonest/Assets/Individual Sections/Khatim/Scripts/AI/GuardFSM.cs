@@ -109,7 +109,7 @@ public class GuardFSM : MonoBehaviour
             case 2: //Chase Condition
                 guardAgent.SetDestination(player.transform.position);
                 guardAgent.speed = guardRunning;
-                // Debug.LogWarning("Chasing Player");
+                Debug.LogWarning("Chasing Player");
                 break;
 
             case 3: //Attack Condition
@@ -133,5 +133,11 @@ public class GuardFSM : MonoBehaviour
         NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
 
         return navHit.position;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, wanderRadius);
     }
 }

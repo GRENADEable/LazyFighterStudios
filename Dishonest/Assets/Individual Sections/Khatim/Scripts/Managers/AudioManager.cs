@@ -45,4 +45,10 @@ public class AudioManager : MonoBehaviour
     {
         AudioAcess(1);
     }
+
+    public void SinglePlayerAudio()
+    {
+        StopAudio();
+        AudioAcess(0);
+    }
 }

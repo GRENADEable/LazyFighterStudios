@@ -32,6 +32,9 @@ public class SceneManage : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenuScene");
+        AudioManager.instance.StopAudio();
+        AudioManager.instance.MainMenuAudio();
+        Time.timeScale = 1;
     }
 
     public void Exit()

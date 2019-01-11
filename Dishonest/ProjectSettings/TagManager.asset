@@ -9,6 +9,13 @@ TagManager:
   - Interact2
   - AI
   - Light
+  - VideoTapeCassette
+  - ContractPapers
+  - YellowPageBook
+  - MobilePhone
+  - Diary
+  - PrivatePhotoAlbums
+  - DrugBox
   layers:
   - Default
   - TransparentFX

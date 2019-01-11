@@ -23,6 +23,8 @@ public class UIManager : MonoBehaviour
     public void NewGame()
     {
         SceneManage.instance.NewGame();
+        AudioManager.instance.StopAudio();
+        AudioManager.instance.SinglePlayerAudio();
     }
 
     public void AboutToMainMenu()
