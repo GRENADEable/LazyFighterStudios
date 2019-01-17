@@ -9,12 +9,14 @@ public class EnemyWander : MonoBehaviour
     public float wanderTimer;
 
     private Transform target;
-    private NavMeshAgent agent;
+    private NavMeshAgent guardAgent;
+    private Animator guardAnim;
     private float timer;
 
     void OnEnable()
     {
-        agent = GetComponent<NavMeshAgent>();
+        guardAgent = GetComponent<NavMeshAgent>();
+        guardAnim = GetComponent<Animator>();
         timer = wanderTimer;
     }
 
@@ -25,8 +27,19 @@ public class EnemyWander : MonoBehaviour
         if (timer >= wanderTimer)
         {
             Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
-            agent.SetDestination(newPos);
+            guardAgent.SetDestination(newPos);
             timer = 0;
+        }
+
+        if (guardAgent.velocity.magnitude < 0.1f)
+        {
+            guardAnim.SetBool("isIdle", true);
+            // Debug.LogWarning("Idle");
+        }
+        if (guardAgent.velocity.magnitude > 0.2f)
+        {
+            guardAnim.SetBool("isIdle", false);
+            // Debug.LogWarning("Not Idle");
         }
     }
 
@@ -41,5 +54,11 @@ public class EnemyWander : MonoBehaviour
         NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
 
         return navHit.position;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, wanderRadius);
     }
 }

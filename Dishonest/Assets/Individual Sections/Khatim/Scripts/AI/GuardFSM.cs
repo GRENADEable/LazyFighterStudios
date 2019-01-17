@@ -7,7 +7,7 @@ public class GuardFSM : MonoBehaviour
 {
     [Header("Guard Ditance Check")]
     public float attackDistance;
-    //public float closeDistance;
+    public float closeDistance;
     public float chaseDistance;
     public float distanceToPlayer;
     [Header("Enemy FoV")]
@@ -31,7 +31,7 @@ public class GuardFSM : MonoBehaviour
     private Transform target;
     private float wanderTimer;
     private Vector3 tarDir;
-    private Animator anim;
+    private Animator guardAnim;
     [SerializeField]
     private float angle;
     [SerializeField]
@@ -39,7 +39,7 @@ public class GuardFSM : MonoBehaviour
     void Start()
     {
         guardAgent = GetComponent<NavMeshAgent>();
-        anim = GetComponent<Animator>();
+        guardAnim = GetComponent<Animator>();
         wanderTimer = maxWanderTimer;
         flashlight.GetComponent<Light>();
     }
@@ -60,31 +60,43 @@ public class GuardFSM : MonoBehaviour
             //Wander
             currCondition = 1;
             flashlight.color = Color.white;
-            anim.SetBool("isRunning", false);
-            anim.SetBool("isAttacking", false);
+            guardAnim.SetBool("isRunning", false);
+            guardAnim.SetBool("isAttacking", false);
         }
 
         if (angle < foV && distanceToPlayer < attackDistance && verticalAngle < verticalFov && currCondition != attackCondition)
         {
             //Attack Player
             currCondition = 3;
-            anim.SetBool("isAttacking", true);
+            guardAnim.SetBool("isAttacking", true);
         }
-        else if (angle < foV && distanceToPlayer < chaseDistance && verticalAngle < verticalFov && currCondition != chaseCondition)
+        //else if (angle < foV && distanceToPlayer < chaseDistance && verticalAngle < verticalFov && currCondition != chaseCondition)
+        if ((distanceToPlayer < chaseDistance && angle < foV || distanceToPlayer < closeDistance) && currCondition != chaseCondition)
         {
             //Chase Player
             currCondition = 2;
             flashlight.color = Color.red;
-            anim.SetBool("isRunning", true);
-            anim.SetBool("isAttacking", false);
+            guardAnim.SetBool("isRunning", true);
+            guardAnim.SetBool("isAttacking", false);
 
         }
 
         if (!player.activeInHierarchy)
         {
             currCondition = 1;
-            anim.SetBool("isRunning", false);
-            anim.SetBool("isAttacking", false);
+            guardAnim.SetBool("isRunning", false);
+            guardAnim.SetBool("isAttacking", false);
+        }
+
+        if (guardAgent.velocity.magnitude < 0.1f)
+        {
+            guardAnim.SetBool("isIdle", true);
+            // Debug.LogWarning("Idle");
+        }
+        if (guardAgent.velocity.magnitude > 0.2f)
+        {
+            guardAnim.SetBool("isIdle", false);
+            // Debug.LogWarning("Not Idle");
         }
     }
 

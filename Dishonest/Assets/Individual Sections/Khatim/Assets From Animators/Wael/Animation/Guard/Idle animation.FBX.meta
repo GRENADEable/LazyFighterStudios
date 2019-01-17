@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: f5753c49e6872ab47941595557c777a2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BOOT
+    100002: CATRigHub002
+    100004: CATRigHub003
+    100006: CATRigHub004
+    100008: CATRigLArm1
+    100010: CATRigLArm2
+    100012: CATRigLArmCollarbone
+    100014: CATRigLArmDigit11
+    100016: CATRigLArmDigit12
+    100018: CATRigLArmDigit13
+    100020: CATRigLArmDigit21
+    100022: CATRigLArmDigit22
+    100024: CATRigLArmDigit23
+    100026: CATRigLArmDigit31
+    100028: CATRigLArmDigit32
+    100030: CATRigLArmDigit33
+    100032: CATRigLArmDigit41
+    100034: CATRigLArmDigit42
+    100036: CATRigLArmDigit43
+    100038: CATRigLArmDigit51
+    100040: CATRigLArmDigit52
+    100042: CATRigLArmDigit53
+    100044: CATRigLArmPalm
+    100046: CATRigLLeg1
+    100048: CATRigLLeg2
+    100050: CATRigLLegAnkle
+    100052: CATRigLLegDigit11
+    100054: CATRigLLegDigit12
+    100056: CATRigLLegPlatform
+    100058: CATRigRArm1
+    100060: CATRigRArm2
+    100062: CATRigRArmCollarbone
+    100064: CATRigRArmDigit11
+    100066: CATRigRArmDigit12
+    100068: CATRigRArmDigit13
+    100070: CATRigRArmDigit21
+    100072: CATRigRArmDigit22
+    100074: CATRigRArmDigit23
+    100076: CATRigRArmDigit31
+    100078: CATRigRArmDigit32
+    100080: CATRigRArmDigit33
+    100082: CATRigRArmDigit41
+    100084: CATRigRArmDigit42
+    100086: CATRigRArmDigit43
+    100088: CATRigRArmDigit51
+    100090: CATRigRArmDigit52
+    100092: CATRigRArmDigit53
+    100094: CATRigRArmPalm
+    100096: CATRigRLeg1
+    100098: CATRigRLeg2
+    100100: CATRigRLegAnkle
+    100102: CATRigRLegDigit11
+    100104: CATRigRLegDigit12
+    100106: CATRigSpine
+    100108: CATRigSpine1
+    100110: CATRigSpine2
+    100112: Character
+    100114: Chrome bit
+    100116: Flashlight
+    100118: hat
+    100120: //RootNode
+    100122: Shirt
+    100124: TIE
+    400000: BOOT
+    400002: CATRigHub002
+    400004: CATRigHub003
+    400006: CATRigHub004
+    400008: CATRigLArm1
+    400010: CATRigLArm2
+    400012: CATRigLArmCollarbone
+    400014: CATRigLArmDigit11
+    400016: CATRigLArmDigit12
+    400018: CATRigLArmDigit13
+    400020: CATRigLArmDigit21
+    400022: CATRigLArmDigit22
+    400024: CATRigLArmDigit23
+    400026: CATRigLArmDigit31
+    400028: CATRigLArmDigit32
+    400030: CATRigLArmDigit33
+    400032: CATRigLArmDigit41
+    400034: CATRigLArmDigit42
+    400036: CATRigLArmDigit43
+    400038: CATRigLArmDigit51
+    400040: CATRigLArmDigit52
+    400042: CATRigLArmDigit53
+    400044: CATRigLArmPalm
+    400046: CATRigLLeg1
+    400048: CATRigLLeg2
+    400050: CATRigLLegAnkle
+    400052: CATRigLLegDigit11
+    400054: CATRigLLegDigit12
+    400056: CATRigLLegPlatform
+    400058: CATRigRArm1
+    400060: CATRigRArm2
+    400062: CATRigRArmCollarbone
+    400064: CATRigRArmDigit11
+    400066: CATRigRArmDigit12
+    400068: CATRigRArmDigit13
+    400070: CATRigRArmDigit21
+    400072: CATRigRArmDigit22
+    400074: CATRigRArmDigit23
+    400076: CATRigRArmDigit31
+    400078: CATRigRArmDigit32
+    400080: CATRigRArmDigit33
+    400082: CATRigRArmDigit41
+    400084: CATRigRArmDigit42
+    400086: CATRigRArmDigit43
+    400088: CATRigRArmDigit51
+    400090: CATRigRArmDigit52
+    400092: CATRigRArmDigit53
+    400094: CATRigRArmPalm
+    400096: CATRigRLeg1
+    400098: CATRigRLeg2
+    400100: CATRigRLegAnkle
+    400102: CATRigRLegDigit11
+    400104: CATRigRLegDigit12
+    400106: CATRigSpine
+    400108: CATRigSpine1
+    400110: CATRigSpine2
+    400112: Character
+    400114: Chrome bit
+    400116: Flashlight
+    400118: hat
+    400120: //RootNode
+    400122: Shirt
+    400124: TIE
+    2100000: 'Material #7'
+    2100002: 'Material #8'
+    2100004: 'Material #3'
+    2100006: 'Material #4'
+    2300000: Chrome bit
+    2300002: Flashlight
+    2300004: hat
+    3300000: Chrome bit
+    3300002: Flashlight
+    3300004: hat
+    4300000: Character
+    4300002: Shirt
+    4300004: TIE
+    4300006: BOOT
+    4300008: hat
+    4300010: Flashlight
+    4300012: Chrome bit
+    7400000: GuardIdle
+    9500000: //RootNode
+    13700000: BOOT
+    13700002: Character
+    13700004: Shirt
+    13700006: TIE
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: GuardIdle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
