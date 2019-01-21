@@ -6676,56 +6676,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4457108445452010, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
         type: 2}
       propertyPath: player
       value: 
       objectReference: {fileID: 1513411334}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1509701272247432, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: chaseDistance
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: attackDistance
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: wanderRadius
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: maxWanderTimer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: guardWalking
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: guardRunning
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: closeDistance
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
@@ -10615,7 +10575,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4457108445452010, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
         type: 2}
@@ -10665,6 +10625,11 @@ Prefab:
       propertyPath: closeDistance
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1596629805155034, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
   m_IsPrefabAsset: 0
@@ -27989,6 +27954,106 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1398859514}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1402648648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1596629805155034, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 555824003}
+--- !u!82 &1402648650
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1402648648}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ea011bde7c059ed449779a89bd269cd1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 14
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1403363731
 GameObject:
   m_ObjectHideFlags: 0
@@ -31992,108 +32057,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4457108445452010, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
       propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509701272247432, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Intensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Range
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
         type: 2}
       propertyPath: player
       value: 
       objectReference: {fileID: 1513411334}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: attackDistance
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: closeDistance
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: chaseDistance
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 195998765101411058, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_WalkableMask
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 195998765101411058, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Radius
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: wanderRadius
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: maxWanderTimer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: chaseHeight
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: veticalFov
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1509701272247432, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
-      propertyPath: m_Name
-      value: GuardV4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: guardWalking
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: guardRunning
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866844843847342, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
-      propertyPath: m_Name
-      value: FlashLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450439351808098, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
-      propertyPath: m_Name
-      value: FlashLightRays
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
@@ -40590,109 +40563,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4457108445452010, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
       propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509701272247432, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Intensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Range
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
         type: 2}
       propertyPath: player
       value: 
       objectReference: {fileID: 1513411334}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: attackDistance
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: closeDistance
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: chaseDistance
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 195998765101411058, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_WalkableMask
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 195998765101411058, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Radius
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: wanderRadius
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: maxWanderTimer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: chaseHeight
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: veticalFov
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108654587781754536, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509701272247432, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
-      propertyPath: m_Name
-      value: GuardV4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: guardWalking
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114419132617076792, guid: bde4f9d355cc94b4c8f716a97cb93f1d,
-        type: 2}
-      propertyPath: guardRunning
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866844843847342, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
-      propertyPath: m_Name
-      value: FlashLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450439351808098, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
-      propertyPath: m_Name
-      value: FlashLightRays
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde4f9d355cc94b4c8f716a97cb93f1d, type: 2}
   m_IsPrefabAsset: 0

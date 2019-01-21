@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
         gameOverFx.Stop();
     }
 
-    void AudioAcess(int index)
+    public void AudioAcess(int index)
     {
         fxSource.PlayOneShot(soundClips[index]);
     }

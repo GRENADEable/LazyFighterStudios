@@ -78,7 +78,6 @@ public class GuardFSM : MonoBehaviour
             flashlight.color = Color.red;
             guardAnim.SetBool("isRunning", true);
             guardAnim.SetBool("isAttacking", false);
-
         }
 
         if (!player.activeInHierarchy)

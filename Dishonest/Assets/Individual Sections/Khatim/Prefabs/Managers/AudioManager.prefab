@@ -346,4 +346,5 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8948588409cefff4bb98309b8e12794e, type: 3}
   - {fileID: 8300000, guid: 2296ac813994fcd41bba6a6e22aafe69, type: 3}
   - {fileID: 8300000, guid: 93291b5baca18554e907f5d0e34ddbc7, type: 3}
+  - {fileID: 8300000, guid: 3bfefa76439ddf441a4a877e6f4f07e5, type: 3}
   audioStart: 9.4
